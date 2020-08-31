@@ -1,0 +1,31 @@
+.signUpContainer {
+  background: #4793fe;
+  background: radial-gradient(circle, #4793fe 14%, #68bbf9 39%, #67e0f3 61%, #a2e9f4 91%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4793fe",endColorstr="#a2e9f4",GradientType=1);
+  text-align: center;
+  height: 100vh;
+  color: white;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signUpContainer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin-right: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
