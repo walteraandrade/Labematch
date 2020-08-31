@@ -1,0 +1,18 @@
+@import "../../global/style/palette";
+
+input {
+  height: 2.5rem;
+  width: 12rem;
+  border-radius: 3rem;
+  border: none;
+  color: $mainColor;
+  padding: 0 2rem;
+  transition: box-shadow 250ms;
+  font-size: 1.2rem;
+  margin: 1.2rem 0;
+  font-weight: bold;
+  &:focus {
+    outline: none;
+    box-shadow: 3px 3px 3px 2px $grey;
+  }
+}

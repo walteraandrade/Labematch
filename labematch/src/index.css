@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Economica", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

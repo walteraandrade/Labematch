@@ -1,0 +1,29 @@
+@mixin backgroundConfig {
+  background: rgb(71, 147, 254);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(71, 147, 254, 1) 14%,
+    rgba(104, 187, 249, 1) 39%,
+    rgba(103, 224, 243, 1) 61%,
+    rgba(162, 233, 244, 1) 91%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(71, 147, 254, 1) 14%,
+    rgba(104, 187, 249, 1) 39%,
+    rgba(103, 224, 243, 1) 61%,
+    rgba(162, 233, 244, 1) 91%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(71, 147, 254, 1) 14%,
+    rgba(104, 187, 249, 1) 39%,
+    rgba(103, 224, 243, 1) 61%,
+    rgba(162, 233, 244, 1) 91%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4793fe",endColorstr="#a2e9f4",GradientType=1);
+  text-align: center;
+  height: 100vh;
+  color: white;
+  margin: 0;
+}

@@ -1,0 +1,46 @@
+@import "../../global/style/palette";
+@import "../../global/style/backgroundConfig";
+.homeContainer {
+  @include backgroundConfig();
+  padding-top: 5rem;
+  .pictureContainer {
+    position: relative;
+    display: flex;
+    margin: auto;
+    flex-flow: row wrap;
+    padding: 0 1rem 0 1rem;
+    width: 90%;
+    overflow: hidden;
+    img:nth-of-type(1) {
+      position: absolute;
+      left: 0.5rem;
+    }
+    img:nth-of-type(2) {
+      position: relative;
+      left: 35%;
+    }
+  }
+  main {
+    button {
+      margin: 1.4rem auto;
+      a {
+        text-decoration: none;
+      }
+    }
+    margin-top: 8rem;
+    button:nth-of-type(1) {
+      background: white;
+      color: $grey;
+      a:visited {
+        color: $grey;
+      }
+    }
+    button:nth-of-type(2) {
+      background: $mainDarker;
+      color: white;
+      a:visited {
+        color: white;
+      }
+    }
+  }
+}
