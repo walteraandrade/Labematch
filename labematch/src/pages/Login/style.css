@@ -1,1 +1,59 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.loginContainer {
+  background: #4793fe;
+  background: radial-gradient(circle, #4793fe 14%, #68bbf9 39%, #67e0f3 61%, #a2e9f4 91%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4793fe",endColorstr="#a2e9f4",GradientType=1);
+  text-align: center;
+  height: 100vh;
+  color: white;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loginContainer input {
+  height: 2.5rem;
+  width: 12rem;
+  border-radius: 3rem;
+  border: none;
+  color: #68bbf9;
+  padding: 0 2rem;
+  -webkit-transition: -webkit-box-shadow 250ms;
+  transition: -webkit-box-shadow 250ms;
+  transition: box-shadow 250ms;
+  transition: box-shadow 250ms, -webkit-box-shadow 250ms;
+  font-size: 1.2rem;
+  margin: 1.2rem 0;
+  font-weight: bold;
+}
+
+.loginContainer input:focus {
+  outline: none;
+  -webkit-box-shadow: 3px 3px 3px 2px #444a49;
+          box-shadow: 3px 3px 3px 2px #444a49;
+}
+
+.loginContainer button {
+  background-color: #4793fe;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.loginContainer h1 {
+  font-family: "Economica";
+}
+
+.loginContainer input {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

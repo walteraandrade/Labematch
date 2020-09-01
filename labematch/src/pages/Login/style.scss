@@ -1,0 +1,26 @@
+@import "../../global/style/input";
+@import "../../global/style/backgroundConfig";
+@import "../../global/style/palette";
+@import "../../global/style/font";
+
+.loginContainer {
+    @include backgroundConfig();
+    input {
+        @include inputConfig();
+    }
+    button {
+        background-color: $mainDarker;
+        color: white;
+        font-size: 1.4rem;
+    }
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-family: $styled;
+    }
+    input {
+        display: block;
+    }
+}

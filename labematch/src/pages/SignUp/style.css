@@ -6,9 +6,13 @@
   height: 100vh;
   color: white;
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "h h" "f i";
+  -ms-grid-rows: 1fr 4fr;
+      grid-template-rows: 1fr 4fr;
+  -ms-grid-columns: 1fr 1/3fr;
+      grid-template-columns: 1fr 1/3fr;
   max-width: 100vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -16,6 +20,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 100vw;
+  overflow: hidden;
+  padding: 0.5rem;
 }
 
 .signUpContainer form {
@@ -26,6 +33,55 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  margin-right: 1rem;
+  max-width: 40%;
+  margin: 0;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: f;
+}
+
+.signUpContainer img {
+  height: 20vh;
+  width: 20vh;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: i;
+}
+
+.signUpContainer button {
+  background: #4793fe;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.signUpContainer input {
+  height: 2.5rem;
+  width: 12rem;
+  border-radius: 3rem;
+  border: none;
+  color: #68bbf9;
+  padding: 0 2rem;
+  -webkit-transition: -webkit-box-shadow 250ms;
+  transition: -webkit-box-shadow 250ms;
+  transition: box-shadow 250ms;
+  transition: box-shadow 250ms, -webkit-box-shadow 250ms;
+  font-size: 1.2rem;
+  margin: 1.2rem 0;
+  font-weight: bold;
+  width: 10rem;
+}
+
+.signUpContainer input:focus {
+  outline: none;
+  -webkit-box-shadow: 3px 3px 3px 2px #444a49;
+          box-shadow: 3px 3px 3px 2px #444a49;
+}
+
+.signUpContainer h1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: h;
+  font-family: "Economica";
 }
 /*# sourceMappingURL=style.css.map */

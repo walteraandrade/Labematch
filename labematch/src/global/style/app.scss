@@ -7,6 +7,19 @@
 
 :root {
   font-size: 90%;
+  ::-webkit-scrollbar {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  ::-webkit-scrollbar-track {
+    background: $mainColor;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $mainLightest;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: $mainDArker;
+  }
 }
 
 button {

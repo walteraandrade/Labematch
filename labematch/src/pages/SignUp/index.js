@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./style.css";
-import Input from "../../components/Input";
 import { useForm } from "../../global/functions/useForm";
+import { useHistory } from "react-router-dom";
 
 function SignUp() {
+  const history = useHistory();
+
   const { form, onChange, resetForm } = useForm({
     name: "",
     email: "",
@@ -19,13 +21,14 @@ function SignUp() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    console.log(form);
+    console.log("Sign up form: " + form);
+    history.push("/login");
   };
 
   return (
     <div className="signUpContainer">
+      <h1>LABEMATCH - sign up</h1>
       <form onSubmit={handleSubmit}>
-        <h3>Sign up to Labematch</h3>
         <input
           name="name"
           type="text"
@@ -43,7 +46,7 @@ function SignUp() {
           onChange={handleInput}
           required
         />
-        <Input
+        <input
           name="password"
           type="text"
           value={form.password}
@@ -61,7 +64,14 @@ function SignUp() {
         />
         <button type="submit">Submit</button>
       </form>
-      <img src={form.picture} alt="profile" />
+      <img
+        src={
+          form.picture
+            ? form.picture
+            : "https://www.masterresellrights.com/pages/SpinnerProSoftware/images/your-face-here.jpg"
+        }
+        alt="profile"
+      />
     </div>
   );
 }

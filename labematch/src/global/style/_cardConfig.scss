@@ -1,0 +1,12 @@
+@import "./palette";
+
+@mixin cardConfig {
+    background: white;
+    height: 40vh;
+    width: 60vw;
+    margin: auto;
+    border-radius: 8%;
+    opacity: 0.9;
+    box-shadow: 1px 1px 10px white;
+    color: $mainColor;
+}

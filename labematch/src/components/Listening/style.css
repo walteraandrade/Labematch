@@ -1,0 +1,12 @@
+.listeningContainer {
+  background: white;
+  height: 40vh;
+  width: 60vw;
+  margin: auto;
+  border-radius: 8%;
+  opacity: 0.9;
+  -webkit-box-shadow: 1px 1px 10px white;
+          box-shadow: 1px 1px 10px white;
+  color: #68bbf9;
+}
+/*# sourceMappingURL=style.css.map */

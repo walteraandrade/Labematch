@@ -1,0 +1,68 @@
+.allTimeFavoritesContainer {
+  background: white;
+  height: 40vh;
+  width: 60vw;
+  margin: auto;
+  border-radius: 8%;
+  opacity: 0.9;
+  -webkit-box-shadow: 1px 1px 10px white;
+          box-shadow: 1px 1px 10px white;
+  color: #68bbf9;
+}
+
+.allTimeFavoritesContainer img {
+  width: 7vw;
+  height: 7vw;
+}
+
+.allTimeFavoritesContainer dl {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  -ms-grid-columns: 1/2fr 6fr 2fr;
+      grid-template-columns: 1/2fr 6fr 2fr;
+  -ms-grid-rows: 1fr 1/2fr;
+      grid-template-rows: 1fr 1/2fr;
+      grid-template-areas: "b m h" "b a h";
+}
+
+.allTimeFavoritesContainer dl #playIcon {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: b;
+}
+
+.allTimeFavoritesContainer dl dt {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: m;
+}
+
+.allTimeFavoritesContainer dl dd {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: a;
+  font-size: 1.3rem;
+}
+
+.allTimeFavoritesContainer dl dt,
+.allTimeFavoritesContainer dl dd {
+  padding: 0 1rem 0 0;
+}
+
+.allTimeFavoritesContainer dl #heart {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: h;
+}
+
+.allTimeFavoritesContainer dt {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,mBAAmB,CAAC;ECChB,UAAU,EAAE,KAAK;EACjB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,aAAa,EAAE,EAAE;EACjB,OAAO,EAAE,GAAG;EACZ,UAAU,EAAE,kBAAkB;EAC9B,KAAK,ECTG,OAAO;CFGlB",
+    "sources": [
+        "style.scss",
+        "../../global/style/_cardConfig.scss",
+        "../../global/style/_palette.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

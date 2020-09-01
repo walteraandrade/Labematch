@@ -1,0 +1,5 @@
+@import "../../global/style/cardConfig";
+
+.recommendationsContainer {
+    @include cardConfig;
+}

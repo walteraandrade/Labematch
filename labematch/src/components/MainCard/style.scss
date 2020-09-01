@@ -1,0 +1,29 @@
+@import "../../global/style/backgroundConfig";
+@import "../../global/style/palette";
+
+.mainCardContainer {
+    @include backgroundConfig();
+    span {
+        background-color: $mainLightest;
+        color: black;
+        margin: 6%;
+        padding: 0.1rem 1rem;
+        border-radius: 1rem;
+    }
+    img {
+        height: 20vh;
+        width: 20vh;
+    }
+    nav > ul {
+        margin-top: 15%;
+        display: flex;
+        overflow-x: scroll;
+        li {
+            margin: 4%;
+            list-style: none;
+            color: black;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+    }
+}

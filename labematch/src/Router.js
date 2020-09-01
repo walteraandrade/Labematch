@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
+import Matching from "./pages/Matching/Matching";
 
 function Router() {
   return (
@@ -15,6 +16,9 @@ function Router() {
       </Switch>
       <Switch>
         <Route path="/signup" exact component={SignUp} />
+      </Switch>
+      <Switch>
+        <Route path="/matching" exact component={Matching} />
       </Switch>
     </BrowserRouter>
   );

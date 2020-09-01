@@ -1,0 +1,6 @@
+@import "../../global/style/backgroundConfig";
+@import "../../global/style/palette";
+
+.matchingContainer {
+    @include backgroundConfig();
+}
