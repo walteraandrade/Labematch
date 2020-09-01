@@ -1,45 +1,6 @@
 @import "../../global/style/palette";
+@import "../../global/style/cardConfig";
 
 .allTimeFavoritesContainer {
-    background: white;
-    height: 40vh;
-    width: 60vw;
-    margin: auto;
-    border-radius: 8%;
-    opacity: 0.9;
-    box-shadow: 1px 1px 10px white;
-    color: $mainColor;
-    img {
-        width: 7vw;
-        height: 7vw;
-    }
-    dl {
-        display: grid;
-        align-items: center;
-        padding: 2rem;
-        grid-template-columns: 1/2fr 6fr 2fr;
-        grid-template-rows: 1fr 1/2fr;
-        grid-template-areas: "b m h" "b a h";
-        #playIcon {
-            grid-area: b;
-        }
-        dt {
-            grid-area: m;
-        }
-        dd {
-            grid-area: a;
-            font-size: 1.3rem;
-        }
-        dt,
-        dd {
-            padding: 0 1rem 0 0;
-        }
-        #heart {
-            grid-area: h;
-        }
-    }
-    dt {
-        font-size: 1.8rem;
-        font-weight: 700;
-    }
+    @include cardConfig();
 }

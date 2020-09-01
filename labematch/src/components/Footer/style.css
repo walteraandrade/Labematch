@@ -1,0 +1,36 @@
+.footerContainer {
+  height: 5rem;
+  position: absolute;
+  bottom: 1rem;
+  width: 90%;
+  right: 5vw;
+  right: 5vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse wrap;
+          flex-flow: row-reverse wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  -webkit-box-shadow: 8px 8px 10px #444a49;
+          box-shadow: 8px 8px 10px #444a49;
+  border-radius: 1rem;
+}
+
+.footerContainer img {
+  height: 3.8rem;
+  width: 3.8rem;
+  border-radius: 1rem;
+  margin: 0.2rem;
+  -webkit-box-shadow: 6px 6px 6px #444a49;
+          box-shadow: 6px 6px 6px #444a49;
+}
+/*# sourceMappingURL=style.css.map */

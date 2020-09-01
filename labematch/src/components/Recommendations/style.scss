@@ -2,4 +2,8 @@
 
 .recommendationsContainer {
     @include cardConfig;
+    img {
+        border: none;
+        border-radius: 0;
+    }
 }

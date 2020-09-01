@@ -1,0 +1,36 @@
+@import "../../global/style/palette";
+
+.listCardContainer {
+    background: white;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 8px $grey;
+    color: $mainColor;
+    img {
+        height: 8rem;
+        width: 8rem;
+        cursor: pointer;
+    }
+    span {
+        background-color: $mainLightest;
+        color: black;
+        margin: 2%;
+        padding: 0.1rem 1rem;
+        border-radius: 1rem;
+        display: inline-block;
+    }
+    .imgAndIconWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .icon {
+        height: 4rem;
+        width: 4rem;
+    }
+    p {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+}

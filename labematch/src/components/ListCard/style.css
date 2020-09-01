@@ -1,0 +1,47 @@
+.listCardContainer {
+  background: white;
+  height: 18rem;
+  width: 18rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 4px 4px 8px #444a49;
+          box-shadow: 4px 4px 8px #444a49;
+  color: #68bbf9;
+}
+
+.listCardContainer img {
+  height: 8rem;
+  width: 8rem;
+  cursor: pointer;
+}
+
+.listCardContainer span {
+  background-color: #a2e9f4;
+  color: black;
+  margin: 2%;
+  padding: 0.1rem 1rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+
+.listCardContainer .imgAndIconWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.listCardContainer .icon {
+  height: 4rem;
+  width: 4rem;
+}
+
+.listCardContainer p {
+  font-size: 2rem;
+  margin: 1rem;
+}
+/*# sourceMappingURL=style.css.map */

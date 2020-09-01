@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Matching from "./pages/Matching/Matching";
+import Search from "./pages/Search";
+import Profile from "./pages/Profile";
 
 function Router() {
   return (
@@ -19,6 +21,12 @@ function Router() {
       </Switch>
       <Switch>
         <Route path="/matching" exact component={Matching} />
+      </Switch>
+      <Switch>
+        <Route path="/search" exact component={Search} />
+      </Switch>
+      <Switch>
+        <Route path="/profile" exact component={Profile} />
       </Switch>
     </BrowserRouter>
   );

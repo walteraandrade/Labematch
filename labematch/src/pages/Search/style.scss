@@ -1,0 +1,14 @@
+@import "../../global/style/backgroundConfig";
+
+.searchContainer {
+    @include backgroundConfig;
+    text-align: center;
+    .cardContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-template-rows: 1fr;
+        margin: 2rem;
+        gap: 1rem;
+    }
+}

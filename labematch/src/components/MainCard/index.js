@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./style.css";
 import PictureFrame from "../PictureFrame";
 import ListDisplay from "../ListDisplay";
+import Header from "../Header";
+import Footer from "../Footer";
 
 function MainCard() {
   const [list, setList] = useState("all-time");
@@ -19,6 +21,7 @@ function MainCard() {
   };
   return (
     <div className="mainCardContainer">
+      <Header />
       <PictureFrame
         link="https://images.unsplash.com/photo-1593359863503-f598684c806f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
         alt="possible match picture"
@@ -35,6 +38,7 @@ function MainCard() {
         </ul>
       </nav>
       <ListDisplay page={list} />
+      <Footer />
     </div>
   );
 }

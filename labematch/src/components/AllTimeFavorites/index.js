@@ -14,9 +14,15 @@ function AllTimeFavorites() {
   return (
     <div className="allTimeFavoritesContainer">
       <dl>
-        <a id="playIcon" href="https://www.youtube.com/watch?v=iL42fwM5muE">
-          <img src={PlayIcon} alt="play" />
-        </a>
+        <img
+          src={PlayIcon}
+          alt="play"
+          title="listen on youtube"
+          onClick={() =>
+            window.open("https://www.youtube.com/watch?v=iL42fwM5muE", "_blank")
+          }
+        />
+
         <dt>"Orion"</dt>
         <dd>"Metallica (1986)"</dd>
         <img
@@ -24,6 +30,7 @@ function AllTimeFavorites() {
           src={like ? FullHeart : EmptyHeart}
           alt="like button"
           onClick={toggleLike}
+          title={like ? "Dislike" : "Love it"}
         />
       </dl>
     </div>

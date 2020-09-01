@@ -1,0 +1,25 @@
+@import "../../global/style/palette";
+
+.footerContainer {
+    height: 5rem;
+    position: absolute;
+    bottom: 1rem;
+    width: 90%;
+    right: 5vw;
+    right: 5vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    background: white;
+    box-shadow: 8px 8px 10px $grey;
+    border-radius: 1rem;
+    img {
+        height: 3.8rem;
+        width: 3.8rem;
+        border-radius: 1rem;
+        margin: 0.2rem;
+        box-shadow: 6px 6px 6px $grey;
+    }
+}
