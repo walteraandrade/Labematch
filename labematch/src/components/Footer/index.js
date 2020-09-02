@@ -1,30 +1,30 @@
 import React from "react";
 import "./style.css";
-import ProfileIcon from "../../global/imgs/profile.svg";
-import MatchIcon from "../../global/imgs/matches.svg";
-import SearchIcon from "../../global/imgs/search.svg";
+import PersonIcon from "@material-ui/icons/Person";
+import LoyaltyIcon from "@material-ui/icons/Loyalty";
+import SearchIcon from "@material-ui/icons/Search";
 import { useHistory } from "react-router-dom";
 
 function Footer() {
   const history = useHistory();
   return (
     <div className="footerContainer">
-      <img
-        src={ProfileIcon}
+      <PersonIcon
+        src={PersonIcon}
         alt="profile"
-        title="profile"
+        fontSize="inherit"
         onClick={() => history.push("/profile")}
       />
-      <img
-        src={MatchIcon}
+
+      <LoyaltyIcon
+        src={LoyaltyIcon}
         alt="matches"
-        title="matches"
+        fontSize="inherit"
         onClick={() => history.push("/matches")}
       />
-      <img
+      <SearchIcon
         src={SearchIcon}
-        alt="search"
-        title="search"
+        fontSize="inherit"
         onClick={() => history.push("/search")}
       />
     </div>

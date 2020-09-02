@@ -1,0 +1,64 @@
+@import "../../global/style/backgroundConfig";
+@import "../../global/style/palette";
+.dialogueContainer {
+  @include backgroundConfig();
+}
+
+.dialogueBody {
+  background-color: white;
+  height: 80%;
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 3rem;
+  overflow: hidden;
+  border: solid 2px $mainLighter;
+}
+
+header {
+  height: 10vh;
+  background: $mainLighter;
+  display: flex;
+  align-items: center;
+  padding: 0.3rem;
+  img {
+    height: 5rem;
+    width: 5rem;
+    border: 2px solid white;
+  }
+  h2 {
+    flex: 0.9;
+  }
+}
+
+main {
+  height: 78%;
+}
+
+footer {
+  background-color: $mainLighter;
+  height: 6vh;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  form {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    button {
+      display: none;
+    }
+  }
+}
+input {
+  border: 2px solid white;
+  height: 3vh;
+  width: 80%;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  &:focus {
+    outline: none;
+    border: 2px $mainDarker solid;
+  }
+}

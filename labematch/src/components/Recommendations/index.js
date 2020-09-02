@@ -19,11 +19,11 @@ function Recommendations() {
           alt="play"
           id="playIcon"
           onClick={() =>
-            window.open("https://www.youtube.com/watch?v=razzBeBLDG4", "_blank")
+            window.open("https://www.youtube.com/watch?v=DrDM6V08wcE", "_blank")
           }
         />
-        <dt>"In My Time of Need"</dt>
-        <dd>"Opeth (2003)"</dd>
+        <dt>"Devin Townsend"</dt>
+        <dd>"Deadhead (2015)"</dd>
         <img
           id="heart"
           src={like ? Add : AddEmpty}

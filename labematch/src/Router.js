@@ -6,6 +6,9 @@ import SignUp from "./pages/SignUp";
 import Matching from "./pages/Matching/Matching";
 import Search from "./pages/Search";
 import Profile from "./pages/Profile";
+import Messages from "./pages/Messages";
+import Dialogue from "./pages/Dialogue";
+import Matches from "./pages/Matches";
 
 function Router() {
   return (
@@ -27,6 +30,15 @@ function Router() {
       </Switch>
       <Switch>
         <Route path="/profile" exact component={Profile} />
+      </Switch>
+      <Switch>
+        <Route path="/messages" exact component={Messages} />
+      </Switch>
+      <Switch>
+        <Route path="/dialogue" exact component={Dialogue} />
+      </Switch>
+      <Switch>
+        <Route path="/matches" exact component={Matches} />
       </Switch>
     </BrowserRouter>
   );

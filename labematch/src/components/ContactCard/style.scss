@@ -1,0 +1,27 @@
+@import "../../global/style/palette";
+
+.contactCardContainer {
+  background-color: white;
+  margin: 2rem;
+  border-radius: 1rem;
+  height: 10vh;
+  box-shadow: 1px 1px 3px 10px white;
+  display: flex;
+  align-items: center;
+  color: $mainDarker;
+  transition: 500ms;
+  cursor: pointer;
+  img {
+    height: 5.2rem;
+    width: 5.2rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  h2 {
+    margin: 1rem;
+  }
+  &:hover {
+    box-shadow: 4px 4px 12px 8px white;
+  }
+}

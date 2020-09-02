@@ -23,14 +23,7 @@
   -webkit-box-shadow: 8px 8px 10px #444a49;
           box-shadow: 8px 8px 10px #444a49;
   border-radius: 1rem;
-}
-
-.footerContainer img {
-  height: 3.8rem;
-  width: 3.8rem;
-  border-radius: 1rem;
-  margin: 0.2rem;
-  -webkit-box-shadow: 6px 6px 6px #444a49;
-          box-shadow: 6px 6px 6px #444a49;
+  color: #68bbf9;
+  font-size: 50px;
 }
 /*# sourceMappingURL=style.css.map */

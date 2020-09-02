@@ -42,7 +42,9 @@ function Login() {
           required
           onChange={inputHandler}
         />
-        <button type="submit">Login</button>
+        <button type="submit" onClick={history.push("/matching")}>
+          Login
+        </button>
       </form>
     </div>
   );

@@ -1,0 +1,40 @@
+.matchCardContainer {
+  background: white;
+  height: 20%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 4px 4px 6px white;
+          box-shadow: 4px 4px 6px white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.matchCardContainer img {
+  height: 10rem;
+  width: 10rem;
+}
+
+.matchCardContainer .buttonWrapper {
+  background-color: #ebf2e6;
+  height: 60%;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #68bbf9;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,90 @@
+.dialogueContainer {
+  background: #4793fe;
+  background: radial-gradient(circle, #4793fe 14%, #68bbf9 39%, #67e0f3 61%, #a2e9f4 91%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4793fe",endColorstr="#a2e9f4",GradientType=1);
+  text-align: center;
+  height: 100vh;
+  color: white;
+  margin: 0;
+}
+
+.dialogueBody {
+  background-color: white;
+  height: 80%;
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 3rem;
+  overflow: hidden;
+  border: solid 2px #67e0f3;
+}
+
+header {
+  height: 10vh;
+  background: #67e0f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.3rem;
+}
+
+header img {
+  height: 5rem;
+  width: 5rem;
+  border: 2px solid white;
+}
+
+header h2 {
+  -webkit-box-flex: 0.9;
+      -ms-flex: 0.9;
+          flex: 0.9;
+}
+
+main {
+  height: 78%;
+}
+
+footer {
+  background-color: #67e0f3;
+  height: 6vh;
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer form button {
+  display: none;
+}
+
+input {
+  border: 2px solid white;
+  height: 3vh;
+  width: 80%;
+  border-radius: 1rem;
+  padding: 0 1rem;
+}
+
+input:focus {
+  outline: none;
+  border: 2px #4793fe solid;
+}
+/*# sourceMappingURL=style.css.map */

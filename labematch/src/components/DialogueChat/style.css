@@ -1,0 +1,31 @@
+.dialogueChatContainer {
+  background: white;
+  height: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #4793fe;
+  -webkit-box-shadow: 2px 2px 10px #444a49;
+          box-shadow: 2px 2px 10px #444a49;
+  position: relative;
+  border-radius: 6px;
+  padding: 0.1rem 0.5rem;
+  margin: 1rem;
+}
+
+.dialogueReceiverContainer {
+  background: #444a49;
+  height: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #a2e9f4;
+  -webkit-box-shadow: 2px 2px 10px #444a49;
+          box-shadow: 2px 2px 10px #444a49;
+  position: relative;
+  border-radius: 6px;
+  padding: 0.1rem 0.5rem;
+  margin: 1rem;
+  margin-left: auto;
+}
+/*# sourceMappingURL=style.css.map */

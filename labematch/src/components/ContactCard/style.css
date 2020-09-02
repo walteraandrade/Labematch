@@ -1,0 +1,37 @@
+.contactCardContainer {
+  background-color: white;
+  margin: 2rem;
+  border-radius: 1rem;
+  height: 10vh;
+  -webkit-box-shadow: 1px 1px 3px 10px white;
+          box-shadow: 1px 1px 3px 10px white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #4793fe;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.contactCardContainer img {
+  height: 5.2rem;
+  width: 5.2rem;
+}
+
+.contactCardContainer p {
+  font-size: 1.2rem;
+}
+
+.contactCardContainer h2 {
+  margin: 1rem;
+}
+
+.contactCardContainer:hover {
+  -webkit-box-shadow: 4px 4px 12px 8px white;
+          box-shadow: 4px 4px 12px 8px white;
+}
+/*# sourceMappingURL=style.css.map */

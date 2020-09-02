@@ -1,25 +1,27 @@
 .headerContainer {
-    height: 3vh;
-    width: 100vw;
-    display: flex;
-    opacity: 0.8;
+  padding-top: 1rem;
+  height: 3vh;
+  width: 100vw;
+  display: flex;
+  opacity: 0.8;
 
-    img {
-        height: 2rem;
-        width: 2rem;
-        border-radius: 0;
-    }
-    #spacer {
-        flex-grow: 1;
-    }
-    #back {
-        align-self: flex-start;
-    }
-    #msg {
-        align-self: flex-end;
-        margin-right: 3rem;
-    }
-    #logout {
-        align-self: flex-end;
-    }
+  img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 0;
+    cursor: pointer;
+  }
+  #spacer {
+    flex-grow: 1;
+  }
+  #back {
+    align-self: flex-start;
+  }
+  #msg {
+    align-self: flex-end;
+    margin-right: 3rem;
+  }
+  #logout {
+    align-self: flex-end;
+  }
 }

@@ -1,0 +1,26 @@
+@import "../../global/style/palette";
+
+.dialogueChatContainer {
+  background: white;
+  height: 2rem;
+  width: fit-content;
+  color: $mainDarker;
+  box-shadow: 2px 2px 10px $grey;
+  position: relative;
+  border-radius: 6px;
+  padding: 0.1rem 0.5rem;
+  margin: 1rem;
+}
+
+.dialogueReceiverContainer {
+  background: $grey;
+  height: 2rem;
+  width: fit-content;
+  color: $mainLightest;
+  box-shadow: 2px 2px 10px $grey;
+  position: relative;
+  border-radius: 6px;
+  padding: 0.1rem 0.5rem;
+  margin: 1rem;
+  margin-left: auto;
+}
