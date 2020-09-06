@@ -7,5 +7,7 @@ export const signup = async (body) => {
 };
 
 export const login = async (body) => {
-  await axios.post(`${baseUrl}/users/login`, body);
+  const response = await axios.post(`${baseUrl}/users/login`, body);
+
+  return response;
 };

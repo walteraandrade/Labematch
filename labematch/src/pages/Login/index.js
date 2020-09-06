@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { useHistory } from "react-router-dom";
 import { useForm } from "../../global/functions/useForm";
-import { login } from "../../global/functions/apiHandler";
+import { login, signup } from "../../global/functions/apiHandler";
 
 function Login() {
   const history = useHistory();
@@ -20,8 +20,14 @@ function Login() {
   const submitHandler = async (event) => {
     event.preventDefault();
     const body = form;
-    await login(body).catch((e) => window.alert("Invalid parameters"));
-    resetForm();
+    try {
+      const res = await login(body);
+      window.localStorage.setItem(res.data.token, "token");
+      resetForm();
+      history.push("/matching");
+    } catch (e) {
+      window.alert("Invalid parameters");
+    }
   };
 
   return (
