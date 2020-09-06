@@ -18,7 +18,7 @@
     background: $mainLightest;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: $mainDArker;
+    background: $mainDarker;
   }
 }
 
@@ -34,5 +34,19 @@ button {
   box-shadow: 3px 3px 7px $grey;
   &:focus {
     outline: none;
+  }
+}
+
+select {
+  border-radius: 10px;
+  background-color: white;
+  margin: 0.5rem auto;
+  &:focus {
+    outline: none;
+  }
+  option {
+    &:hover {
+      background-color: $mainColor;
+    }
   }
 }

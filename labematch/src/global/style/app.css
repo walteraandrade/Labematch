@@ -14,7 +14,7 @@
 }
 
 :root ::-webkit-scrollbar-track {
-  background: #4793fe;
+  background: #68bbf9;
 }
 
 :root ::-webkit-scrollbar-thumb {
@@ -22,7 +22,7 @@
 }
 
 :root ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #4793fe;
 }
 
 button {
@@ -40,5 +40,19 @@ button {
 
 button:focus {
   outline: none;
+}
+
+select {
+  border-radius: 10px;
+  background-color: white;
+  margin: 0.5rem auto;
+}
+
+select:focus {
+  outline: none;
+}
+
+select option:hover {
+  background-color: #68bbf9;
 }
 /*# sourceMappingURL=app.css.map */

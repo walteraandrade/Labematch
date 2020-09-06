@@ -7,6 +7,7 @@
   color: white;
   margin: 0;
   padding-top: 5rem;
+  width: 100vw;
 }
 
 .homeContainer .pictureContainer {
@@ -14,28 +15,37 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
+  margin: 5rem auto 0;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-flow: row no-wrap;
+          flex-flow: row no-wrap;
   padding: 0 1rem 0 1rem;
   width: 90%;
-  overflow: hidden;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .homeContainer .pictureContainer img:nth-of-type(1) {
-  position: absolute;
-  left: 0.5rem;
+  position: relative;
+  left: 10%;
+  height: 20vh;
+  width: 20vh;
 }
 
 .homeContainer .pictureContainer img:nth-of-type(2) {
   position: relative;
-  left: 35%;
+  right: 10%;
+  height: 20vh;
+  width: 20vh;
 }
 
 .homeContainer main {
-  margin-top: 8rem;
+  height: 10vh;
 }
 
 .homeContainer main button {

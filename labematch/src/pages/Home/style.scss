@@ -1,33 +1,41 @@
 @import "../../global/style/palette";
 @import "../../global/style/backgroundConfig";
+
 .homeContainer {
   @include backgroundConfig();
   padding-top: 5rem;
+  width: 100vw;
   .pictureContainer {
     position: relative;
     display: flex;
-    margin: auto;
-    flex-flow: row wrap;
+    margin: 5rem auto 0;
+    flex-flow: row no-wrap;
     padding: 0 1rem 0 1rem;
     width: 90%;
-    overflow: hidden;
+    height: fit-content;
+    justify-content: center;
     img:nth-of-type(1) {
-      position: absolute;
-      left: 0.5rem;
+      position: relative;
+      left: 10%;
+      height: 20vh;
+      width: 20vh;
     }
     img:nth-of-type(2) {
       position: relative;
-      left: 35%;
+      right: 10%;
+      height: 20vh;
+      width: 20vh;
     }
   }
   main {
+    height: 10vh;
     button {
       margin: 1.4rem auto;
       a {
         text-decoration: none;
       }
     }
-    margin-top: 8rem;
+
     button:nth-of-type(1) {
       background: white;
       color: $grey;

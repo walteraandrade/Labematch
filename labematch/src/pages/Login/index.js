@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import { useHistory } from "react-router-dom";
 import { useForm } from "../../global/functions/useForm";
+import { login } from "../../global/functions/apiHandler";
 
 function Login() {
   const history = useHistory();
@@ -16,9 +17,10 @@ function Login() {
     onChange(name, value);
   };
 
-  const submitHandler = (event) => {
+  const submitHandler = async (event) => {
     event.preventDefault();
-
+    const body = form;
+    await login(body).catch((e) => window.alert("Invalid parameters"));
     resetForm();
   };
 
@@ -42,9 +44,7 @@ function Login() {
           required
           onChange={inputHandler}
         />
-        <button type="submit" onClick={history.push("/matching")}>
-          Login
-        </button>
+        <button type="submit">Login</button>
       </form>
     </div>
   );
