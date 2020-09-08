@@ -1,6 +1,6 @@
 @import "../../global/style/backgroundConfig";
 @import "../../global/style/palette";
-
+@import "../../global/style/genreCard";
 .profileContainer {
     @include backgroundConfig();
 }
@@ -26,6 +26,14 @@
     input {
         margin-left: 0;
         border: 2px solid $mainColor;
+    }
+}
+
+.genreBox {
+    display: flex;
+    span {
+        @include genreCard();
+        margin: 1rem 0.5%;
     }
 }
 #upperBody {

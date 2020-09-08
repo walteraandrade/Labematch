@@ -40,6 +40,21 @@
   border: 2px solid #68bbf9;
 }
 
+.genreBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.genreBox span {
+  background-color: #a2e9f4;
+  color: black;
+  margin: 6%;
+  padding: 0.1rem 1rem;
+  border-radius: 1rem;
+  margin: 1rem 0.5%;
+}
+
 #upperBody img {
   position: absolute;
   top: 10%;

@@ -11,3 +11,14 @@ export const login = async (body) => {
 
   return response;
 };
+
+export const fetchProfile = async (token) => {
+  try {
+    const response = await axios.get(`${baseUrl}/users/fetchProfile`, {
+      headers: { token: token },
+    });
+    return response;
+  } catch (e) {
+    window.alert(e);
+  }
+};

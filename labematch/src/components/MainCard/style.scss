@@ -1,14 +1,11 @@
 @import "../../global/style/backgroundConfig";
 @import "../../global/style/palette";
+@import "../../global/style/genreCard";
 
 .mainCardContainer {
     @include backgroundConfig();
     span {
-        background-color: $mainLightest;
-        color: black;
-        margin: 6%;
-        padding: 0.1rem 1rem;
-        border-radius: 1rem;
+        @include genreCard();
     }
     img {
         height: 20vh;

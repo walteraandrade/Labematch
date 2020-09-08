@@ -8,6 +8,11 @@ import { useHistory } from "react-router-dom";
 function Header() {
   const history = useHistory();
 
+  const logout = () => {
+    window.localStorage.clear();
+    history.push("/login");
+  };
+
   return (
     <div className="headerContainer">
       <img
@@ -25,7 +30,13 @@ function Header() {
         title="my messages"
         onClick={() => history.push("/messages")}
       />
-      <img id="logout" src={LogoutIcon} alt="logout" title="logout" />
+      <img
+        id="logout"
+        src={LogoutIcon}
+        alt="logout"
+        title="logout"
+        onClick={logout}
+      />
     </div>
   );
 }

@@ -1,0 +1,9 @@
+@import "./palette";
+
+@mixin genreCard {
+    background-color: $mainLightest;
+    color: black;
+    margin: 6%;
+    padding: 0.1rem 1rem;
+    border-radius: 1rem;
+}

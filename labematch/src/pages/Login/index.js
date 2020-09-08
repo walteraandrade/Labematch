@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.css";
 import { useHistory } from "react-router-dom";
 import { useForm } from "../../global/functions/useForm";
 import { login, signup } from "../../global/functions/apiHandler";
+import { authentification } from "../../global/functions/authentification";
 
 function Login() {
   const history = useHistory();
@@ -22,9 +23,9 @@ function Login() {
     const body = form;
     try {
       const res = await login(body);
-      window.localStorage.setItem(res.data.token, "token");
+      window.localStorage.setItem("token", res.data.token);
       resetForm();
-      history.push("/matching");
+      history.replace("/matching");
     } catch (e) {
       window.alert("Invalid parameters");
     }

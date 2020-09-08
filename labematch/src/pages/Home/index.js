@@ -5,6 +5,7 @@ import "./style.css";
 
 export function Home() {
   const history = useHistory();
+
   return (
     <div className="homeContainer">
       <section className="pictureContainer">
